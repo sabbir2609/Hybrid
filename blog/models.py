@@ -28,11 +28,11 @@ class Post(models.Model):
     objects = models.Manager()  # The default manager
     published = PublishedManager()  # our custom manager
 
-    def get_absulate_url(self):
-        return reverse('blog:post_detail', args=[self.publish.year,
-                                                 self.publish.month,
-                                                 self.publish.day,
-                                                 self.slug])
+    def get_absolute_url(self):
+        return reverse('blog:post_detail',
+                       args=[self.publish.year,
+                             self.publish.month,
+                             self.publish.day, self.slug])
 
     class Meta:
         ordering = ('-publish', )

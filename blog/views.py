@@ -9,6 +9,6 @@ def post_list(request):
 
 def post_detail(request, year, month, day, post):
     post = get_object_or_404(Post, slug=post, status='published',
-                             published__year=year, publish__month=month, publish__day=day)
+                             publish__year=year, publish__month=month, publish__day=day)
 
     return render(request, 'blog/post/detail.html', {'post': post})
