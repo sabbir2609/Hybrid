@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import yaml
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -42,6 +43,21 @@ INSTALLED_APPS = [
     'home',
     'blog',
 ]
+
+# email backend --> start
+
+# load yml file to dictionary
+credentials = yaml.safe_load(open('./credentials.yml'))
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = credentials['email']['hostname']
+EMAIL_HOST_USER = credentials['email']['mail']
+EMAIL_HOST_PASSWORD = credentials['email']['password']
+EMAIL_PORT = credentials['email']['port']
+EMAIL_USE_TLS = True
+
+# email backend --> end
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

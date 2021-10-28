@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 wagtail = "*"
+pyyaml = "*"
 
 [dev-packages]
 autopep8 = "*"

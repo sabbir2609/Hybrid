@@ -33,6 +33,7 @@ def post_detail(request, year, month, day, post):
     return render(request, 'blog/post/detail.html', {'post': post})
 
 
+
 # will work on it ltr
 def post_share(request, post_id):
     # Retrive post by id
