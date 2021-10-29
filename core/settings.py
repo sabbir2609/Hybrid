@@ -42,7 +42,14 @@ INSTALLED_APPS = [
     # my apps
     'home',
     'blog',
+
+    # third party app
+    'crispy_forms',
+    "crispy_bootstrap5",
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # email backend --> start
 
