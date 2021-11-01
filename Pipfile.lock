@@ -317,14 +317,6 @@
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'",
             "version": "==1.26.7"
         },
-        "wagtail": {
-            "hashes": [
-                "sha256:c13283dd19dc4fc6c46867bff21bf1813ccd42a8faa322db4ac711715bc3af44",
-                "sha256:fe6632e6e232977ea59d5c2ac5197691596095d9771ff35b5294a481126fe901"
-            ],
-            "index": "pypi",
-            "version": "==2.14.2"
-        },
         "webencodings": {
             "hashes": [
                 "sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78",
