@@ -6,6 +6,7 @@
     <div class="card shadow rounded my-3 ">
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
+            <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
             <h6 class="card-subtitle mb-2 text-muted">Published {{ post.publish }} by {{ post.author }}</h6>
             <p class="card-text">{{ post.body|truncatewords:30|linebreaks }}</p>
             <a href="{{ post.get_absolute_url }}" class="card-link">Card link</a>

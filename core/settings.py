@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'blog',
 
     # third party app
+    'taggit',
     'crispy_forms',
     "crispy_bootstrap5",
 ]
