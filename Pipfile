@@ -5,11 +5,6 @@ name = "pypi"
 
 [packages]
 django = "*"
-wagtail = "*"
-pyyaml = "*"
-django-crispy-forms = "*"
-crispy-bootstrap5 = "*"
-django-taggit = "*"
 
 [dev-packages]
 autopep8 = "*"
